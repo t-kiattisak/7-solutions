@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package user;
+
+message UserDepartment {
+  int32 male = 1;                
+  int32 female = 2;              
+  string ageRange = 3;           
+  map<string, int32> hair = 4;          
+  map<string, string> addressUser = 5;
+}
+
+message GetUsersResponse {
+  map<string, UserDepartment> departments = 1;
+}
+
+message Empty {}
+
+service UserService {
+  rpc GetUsers (Empty) returns (GetUsersResponse);
+}
