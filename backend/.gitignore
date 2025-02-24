@@ -1,0 +1,40 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# gRPC generated files
+src/core/generated/*
+
+# Build output
+dist/
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+
+# Cache files
+npm-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+
+# Ignore lock files if needed
+package-lock.json
